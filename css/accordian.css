@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap');
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: medium;
+    color: #ffffff;
+}
+
+.accordion_wrap ul {
+    display: flex;
+    justify-content: center;
+}
+
+.accordion_wrap .accordion_item {
+    list-style: none;
+    width: 145px;
+    height: 400px;
+    background: #721b1b;
+    border-right: 2px solid #001320;
+    opacity: 0.7;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.4s linear;
+}
+
+.accordion_wrap .accordion_item:hover,
+.accordion_wrap li.active .accordion_item {
+    background: #8a1b1b;
+    border-right: 2px solid #001320;
+}
+
+.accordion_wrap li:first-child .accordion_item {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.accordion_wrap li:last-child .accordion_item,
+.accordion_wrap li:last-child .accordion_menu {
+    border-right: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.accordion_wrap ul li .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.accordion_wrap ul li.walk .icon {
+    background-position: 0 0;
+    width: 20px;
+    height: 43px;
+}
+
+.accordion_wrap ul li.bicycle .icon {
+    background-position: 0 -56px;
+    width: 43px;
+    height: 28px;
+}
+
+.accordion_wrap ul li.bike .icon {
+    background-position: 0 -96px;
+    width: 43px;
+    height: 32px;
+}
+
+.accordion_wrap ul li.car .icon {
+    background-position: 0 -141px;
+    width: 43px;
+    height: 24px;
+}
+
+.accordion_wrap ul li.train .icon {
+    background-position: 0 -178px;
+    width: 43px;
+    height: 33px;
+}
+
+.accordion_wrap ul li.aeroplane .icon {
+    background-position: 0 -224px;
+    width: 43px;
+    height: 43px;
+}
+
+.accordion_wrap ul li {
+    display: flex;
+}
+
+.accordion_menu {
+    width: 1px;
+    height: 175px;
+    background: #6b2929;
+    color: #ffffff;
+    opacity: 0.8;
+    overflow: hidden;
+    transition: width 0.2s ease;
+}
+
+.accordion_wrap ul li.active .accordion_menu {
+    width: 350px;
+    height: 400px;
+}
+
+.accordion_menu .inner_am {
+    padding: 15px;
+}
+
+.accordion_menu .title {
+    font-weight: 600;
+}
+
+.accordion_menu .content {
+    font-size: 13px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.accordion_menu .view_more {
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #4e0606;
+    color: #fffaeb;
+    width: 125px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.accordion_menu .view_more:hover {
+    text-decoration: solid;
+}
+
+.accordion_item .content {
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+}
